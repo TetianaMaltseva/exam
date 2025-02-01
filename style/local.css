@@ -1,0 +1,409 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+body{
+	font-family: "Raleway", "Light haus", "De Basto", sans-serif;
+	max-width: 1920px;
+}
+
+/* header */
+
+header{
+	width: 100%;
+	background: #292E36;
+}
+.head{
+	display: flex;
+	justify-content: space-between;
+}
+nav{
+	margin-top: 23px;
+	display: flex;
+	gap: 50px;
+	justify-content: flex-start;
+	align-items: center;
+}
+.nav-bar{
+	width: 40%;
+	padding-left: 80px;
+}
+
+/* burger-.menu */
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-links{
+	display: flex;
+	gap: 60px;
+}
+.nav-links a{
+	font-family: 'Times New Roman', Times, serif;
+	color: #FCFCFC;
+    font-weight: 200;
+    font-size: 20px;
+    font-weight: 23.48px;
+	transition: 0.3s;
+}
+.burger-menu{
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	cursor: pointer;
+}
+.burger-menu span{
+	width: 30px;
+	height: 3px;
+	background-color: #FCFCFC;
+	transition: 0.3s;
+}
+.first-logo{
+	font-size: 12.87px;
+	line-height: 15.11px;
+	border: #FCFCFC 1px solid;
+	min-width: 110px;
+    min-height: 39px;
+	padding: 5px 3px 5px 3px;
+	text-align: center;
+}
+.logo{
+	font-size: 17.6px;
+	line-height: 22.12px;
+}
+.text-bg{
+	padding-top: 249px;
+	padding-left: 83.15px;
+}
+.text-header-md{
+	font-size: 20px;
+	line-height: 25.78px;
+}
+.text-header-lg{
+	font-size: 96px;
+	line-height: 110px;
+	margin-top: 25px;
+}
+.text-header-lm{
+	margin-top: 15px;
+}
+
+.bg-nav{
+	width: 60%;
+}
+
+/* Information */
+.information{
+	padding: 150px 0 150px 0;
+}
+.wrapper{
+	max-height: 768px;
+	max-width: 1408px;
+	margin: 0 auto;
+	display: flex;
+	gap: 100px;
+}
+.information-bg{
+	width: 50%;
+}
+.information-text{
+	width: 50%;
+}
+.info-text-lg{
+	line-height: 63.54px;
+	color: #292E36;
+}
+.info-text-sm{
+	font-size: 22px;
+	line-height: 25.83px;
+	padding-top: 35px;
+	color: #535a67;
+}
+.caption{
+	color: #606774;
+	text-align: end;
+	margin-top: 20px;
+	font-family: "Love Light", serif;
+	font-size: 44px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 130.94px
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+	/* header */
+	.burger-menu{
+		display: flex;
+	}
+	.nav-links{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 30px;
+		right: 0;
+		background: #292E36;
+		width: 200px;
+		padding: 15px;
+	}
+	.nav-links.active{
+		display: flex;
+	}
+	.text-header-lg{
+		font-size: 50px;
+	}
+	.text-bg{
+		padding-top: 120px;
+		padding-left: 0;
+	}
+	/* information */
+	.information{
+		padding: 50px 0 50px 0;
+	}
+	.wrapper{
+		gap: 30px;
+	}
+	.info-text-lg{
+		line-height: 50px;
+		font-size: 30px;
+	}
+	.info-text-sm{
+		font-size: 18px;
+		line-height: 19px;
+		padding-top: 20px;
+		
+	}
+	.caption{
+		margin-top: 15px;
+		font-size: 35px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	/* header */
+	.burger-menu{
+		display: flex;
+	}
+	.nav-links{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 30px;
+		right: 0;
+		background: #292E36;
+		width: 200px;
+		padding: 15px;
+	}
+	.nav-links.active{
+		display: flex;
+	}
+
+	.head{
+		flex-wrap: flex;
+	}
+	.nav-bar{
+		width: 50%;
+	}
+	.bg-nav{
+		display: 50%;
+	}
+	.text-header{
+		display: none;
+	}
+	.text-bg{
+		padding-top: 100px;
+		padding-left: 0px;
+	}
+	.header-btn{
+		width: 220px;
+		height: 50px;
+	}	
+		/*information  */
+
+		.information{
+			padding: 50px 0 50px 0;
+		}
+		.wrapper{
+			gap: 30px;
+		}
+		.info-text-lg{
+			line-height: 50px;
+			font-size: 30px;
+		}
+		.info-text-sm{
+			font-size: 18px;
+			line-height: 19px;
+			padding-top: 20px;
+			
+		}
+		.caption{
+			margin-top: 15px;
+			font-size: 35px;
+		}	
+}
+
+@media (min-width: 410px) and (max-width: 768px){
+	/* header */
+	.first-logo{
+		display: none;
+	}
+	.burger-menu{
+		display: flex;
+	}
+	.nav-links{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 10px;
+		right: 0;
+		background: #292E36;
+		width: 150px;
+		padding: 10px;
+	}
+	.nav-links.active{
+		display: flex;
+	}
+	.head{
+		flex-wrap: wrap;
+	}
+	.nav-bar{
+		width: 50%;
+		padding-left: 30px;
+	}
+	.bg-nav{
+		width: 50%;
+	}
+	.nav-links{
+		gap: 30px;
+	}
+	.text-header{
+		display: none;
+	}
+	.text-bg{
+		padding-top: 50px;
+		padding-left: 0px;
+	}
+	.header-btn{
+		width: 150px;
+		height: 40px;
+		font-size: 15px;
+	}
+	/* information */
+	.information{
+		padding: 50px 10px 50px 10px;
+	}
+	.wrapper{
+		gap: 30px;
+	}
+	.info-text-lg{
+		line-height: 50px;
+		font-size: 30px;
+	}
+	.info-text-sm{
+		font-size: 18px;
+		line-height: 19px;
+		padding-top: 20px;
+		
+	}
+	.caption{
+		margin-top: 15px;
+		font-size: 35px;
+	}
+	.information-bg{
+		display: none;
+	}
+	.information-text{
+		width: 100%;
+	}
+	
+}
+@media (min-width: 290px) and (max-width: 410px){
+	/* header */
+	.head{
+		padding-bottom: 50px;
+	}
+	.first-logo{
+		display: none;
+	}
+	.burger-menu{
+		display: flex;
+	}
+	.nav-links{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 10px;
+		right: 0;
+		background: #292E36;
+		width: 150px;
+		padding: 10px;
+	}
+	.nav-links.active{
+		display: flex;
+	}
+	.nav-bar{
+		width: 100%;
+		padding-left: 30px;
+	}
+	.bg-nav{
+		display: none;
+	}
+	.nav-links{
+		gap: 30px;
+	}
+	.text-header{
+		display: none;
+	}
+	.text-bg{
+		padding-top: 30px;
+		padding-left: 0px;
+	}
+	.header-btn{
+		width: 150px;
+		height: 40px;
+		font-size: 15px;
+	}
+	/* information */
+	.information{
+		padding: 20px 5px 20px 5px;
+	}
+	.wrapper{
+		gap: 30px;
+	}
+	.information-bg{
+		display: none;
+	}
+	.information-text{
+		width: 100%;
+	}
+	.info-text-lg{
+		line-height: 50px;
+		font-size: 30px;
+	}
+	.info-text-sm{
+		font-size: 18px;
+		line-height: 19px;
+		padding-top: 20px;
+		
+	}
+	.caption{
+		margin-top: 15px;
+		font-size: 35px;
+	}
+	
+	
+}
+
+

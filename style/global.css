@@ -1,0 +1,53 @@
+
+
+img{
+	display: block;
+	width: 100%;
+}
+/* fonts */
+
+.hugo-title-lg{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 56.72px;
+    color: #FCFCFC;
+}
+.hugo-title-lg-other{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+.text-md-300{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: #FCFCFC;
+}
+.text-md-400{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+.text-md-500{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-weight: 21.13px;
+}
+
+/* button */
+
+.header-btn{
+    margin-top: 35px;
+    background: #292E36;
+    border: #FCFCFC 1px solid;
+    width: 277px;
+    height: 71px;
+    color: #FCFCFC;
+    text-align: center;
+}
+
+/* background */
+.white-bg{
+    background: #FCFCFC;
+}
+
