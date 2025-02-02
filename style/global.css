@@ -45,9 +45,16 @@ img{
     color: #FCFCFC;
     text-align: center;
 }
+.menu-btn{
+    width: 279.77px;
+    height: 71px;
+}
 
 /* background */
 .white-bg{
     background: #FCFCFC;
+}
+.gray-bg{
+    background: #292E36;
 }
 

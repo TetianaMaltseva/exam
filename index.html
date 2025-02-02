@@ -6,13 +6,14 @@
     <title>Exam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/global.css">
 		<link rel="stylesheet" href="style/local.css">
     
 </head>
 <body>
-    <header>
+    <header class="gray-bg">
 			<div class="head">
         <div class="nav-bar">
 					<div class="menu-nav">
@@ -26,7 +27,7 @@
                 </div>
 							  <ul class="nav-links" id="nav-links">
 								  <li><a href="#information">Концепция</a></li>
-								  <li><a href="#">Меню</a></li>
+								  <li><a href="#menu">Меню</a></li>
 								  <li><a href="#">Интерьер</a></li>
 								  <li><a href="#">Контакты</a></li>
 							  </ul>
@@ -66,7 +67,90 @@
       </div>
     </div>
    </section>
+   <section class="menu gray-bg" id="menu">
+      <div class="menu-wrapper">
+        <div class="menu-carousel">
+          <div class="text-carousel">
+            <p class="carousel-title hugo-title-lg-other">MEНЮ</p>
+            <p class="carousel-text text-md-300">Самые популярные блюда нашего ресторана, изысканный вкус<br>
+               и уникальная подача,разработанные нашим шеф-поваром, не<br> оставляет никого равнодушным.
+            </p>
+          </div>
+          <div class="carousel">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                  <!-- Слайд 1 -->
+                  <div class="swiper-slide">
+                      <img src="photo/menu1.png" alt="Блюдо 1">
+                        <h3 class="text-md-500">Рыбный стейк</h3>
+                        <p class="text-md-500">250₴</p>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="photo/menu2.png" alt="Блюдо 2">
+                       <h3 class="text-md-500">Паста Карбонара</h3>
+                       <p class="text-md-500">300₴</p>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="photo/menu3.png" alt="Блюдо 3">
+                        <h3 class="text-md-500">Тирамису</h3>
+                        <p class="text-md-500">300₴</p>
+                  </div>
+          
+                  <!-- Слайд 2 -->
+                  <div class="swiper-slide">
+                    <img src="photo/menu1.png" alt="Блюдо 1">
+                      <h3 class="text-md-500">Рыбный стейк</h3>
+                      <p class="text-md-500">250₴</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="photo/menu2.png" alt="Блюдо 2">
+                     <h3 class="text-md-500">Паста Карбонара</h3>
+                     <p class="text-md-500">300₴</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="photo/menu3.png" alt="Блюдо 3">
+                      <h3 class="text-md-500">Тирамису</h3>
+                      <p class="text-md-500">300₴</p>
+                  </div>
+              </div>
+          
+              <!-- Кнопки навигации -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+          </div>
+          <button class="full menu-btn text-md-500">Смотреть полное меню</button>
+          <button class="wine menu-btn text-md-500">Винная карта</button>
+        </div>
+        <div class="menu-bg">
+          <img src="photo/menu-bg.png" alt="menu">
+          <div class="pizza">
+            <div class="pizza-name text-md-500">Пицца Капричоза с ветчиной и шампиньонами</div>
+            <div class="pizza-price text-md-500">350₴</div>
+          </div>
+        </div>
+
+      </div>
+   </section>
+   <section class="team white-bg">
+    <div class="team-wrapper">
+      <div class="team-bg">
+        <img src="photo/team-bg.png">
+      </div>
+      <div class="team-text">
+        <p class="team-title hugo-title-lg">
+          КОМАНДА ПРОФЕССИОНАЛОВ
+        </p>
+        <p class="team-sm text-md-300">С опытом работы более 15 лет, под руководством бренд-шефа из Италии Антонио Фитучини.</p>
+        <p class="team-sm text-md-300">“Повар должен сделать так, чтоб гости понимали то, что он сказать своим блюдом.”</p>
+        <div class="team-img">
+          <img src="photo/team.png">
+        </div>
+      </div>
+    </div>
+   </section>
     <footer></footer>
-  <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js" defer></script>  
 </body>
 </html>
