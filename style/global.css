@@ -13,6 +13,13 @@ img{
     line-height: 56.72px;
     color: #FCFCFC;
 }
+.hugo-title-lg-b{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 56.72px;
+    color: #292E36;
+}
 .hugo-title-lg-other{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
@@ -57,4 +64,6 @@ img{
 .gray-bg{
     background: #292E36;
 }
+
+
 

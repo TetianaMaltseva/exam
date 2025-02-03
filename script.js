@@ -18,4 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         loop: true, // Бесконечная прокрутка
     });
+
+    // carousel 2
+    // let swiper2 = new Swiper(".mySwiper2",{
+    //     effect: "coverflow",
+    //     grabCursor: true,
+    //     centeredSlides: true,
+    //     slidesPerView: "auto",
+    //     coverflowEffect: {
+    //         rotate: 0,
+    //         stretch: 0,
+    //         depth: 100,
+    //         modifier: 1,
+    //         slideShadows: false,
+    //     },
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true, /* Делаем бегунок кликабельным */
+    //     },
+    // });
 });
+
