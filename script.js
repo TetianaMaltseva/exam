@@ -18,24 +18,40 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         loop: true, // Бесконечная прокрутка
     });
-
-    // carousel 2
-    // let swiper2 = new Swiper(".mySwiper2",{
-    //     effect: "coverflow",
-    //     grabCursor: true,
-    //     centeredSlides: true,
-    //     slidesPerView: "auto",
-    //     coverflowEffect: {
-    //         rotate: 0,
-    //         stretch: 0,
-    //         depth: 100,
-    //         modifier: 1,
-    //         slideShadows: false,
-    //     },
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true, /* Делаем бегунок кликабельным */
-    //     },
-    // });
 });
+
+// carousel 2
+
+const track = document.querySelector(".slider-track");
+const thumb = document.querySelector(".scrollbar-thumb");
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+const slideWidth = 610; // Ширина слайда + отступ
+
+let index = 0;
+
+function moveSlides() {
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    thumb.style.transform = `translateX(${(index / (totalSlides - 3)) * 200}px)`;
+}
+
+// Управление слайдерами по клику
+track.addEventListener('wheel',(e) => {
+    e.preventDefault();
+    if (e.deltaY < 0) {
+        index--;
+    } else {
+        index++;
+    }
+    handleInfiniteScroll();
+    moveSlides();
+});
+
+function handleInfiniteScroll() {
+    if (index >= totalSlides) {
+        index = 0;
+    } else if (index < 0) {
+        index = totalSlides - 1;
+    }
+}
 
