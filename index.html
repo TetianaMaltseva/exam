@@ -184,8 +184,30 @@
       </div>
 
       <!-- slider 2 -->
+      <div class="carousel-2 swiper">
+        <!-- Additional required wrapper -->
+        <div class="carousel-wrapper-2 swiper-wrapper">
+          <!-- Slides -->
+          <div class="carousel-2 swiper-slide"><img src="photo/interior.png" alt="Slide 1"></div>
+          <div class="carousel-2 swiper-slide"><img src="photo/interior1.png" alt="Slide 2"></div>
+          <div class="carousel-2 swiper-slide"><img src="photo/interior2.png" alt="Slide 3"></div>
+          <div class="carousel-2 swiper-slide"><img src="photo/interior.png" alt="Slide 4"></div>
+          <div class="carousel-2 swiper-slide"><img src="photo/interior1.png" alt="Slide 5"></div>
+          <div class="carousel-2 swiper-slide"><img src="photo/interior2.png" alt="Slide 6"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div>
+      </div> -->
 
-      <div class="slider-container">
+      <!-- <div class="slider-container">
         <div class="slider">
             <div class="slider-track">
                 <div class="slide"><img src="photo/interior.png" alt="Slide 1"></div>
@@ -199,7 +221,7 @@
         <div class="scrollbar">
             <div class="scrollbar-thumb"></div>
         </div>
-    </div>
+    </div> -->
      
     </div>
    </section>
@@ -210,14 +232,14 @@
         <div class="form-form">
           <div class="form-img"><img src="photo/form-img.png"></div>
           <div class="form-user">
-            <p class="text-md-400">Заполните форму и мы свяжемся  с вами сразу<br> для подтверждения брони</p>
+            <p class="form-text text-md-400">Заполните форму и мы свяжемся  с вами сразу<br> для подтверждения брони</p>
             <form>
-              <label for=""></label>
-              <input type="text">
-              <label for=""></label>
-              <input type="text" name="" id="">
-              <input type="text">
-              <button>Забронируйте столик</button>
+              <label for="name" class="text-md-400">Ваш номер</label>
+              <input type="text" id="name" class="text-md-400" placeholder="Анастасия ">
+              <label for="tel" class="text-md-400">Ваш номер</label>
+              <input type="text" class="text-md-400" id="tel" placeholder="+380(00) 000-00-00">
+              <input type="checkbox" id="text1"><label for="text1">Согласен(-а) на обработку персональных данных</label>
+              <button class="header-btn-w text-md-500">Забронируйте столик</button>
             </form>
           </div>
         </div>
@@ -227,7 +249,33 @@
       </div>
     </div>
    </section>
-    <footer></footer>
+    <footer class="gray-bg">
+      <div class="footer-wrapper">
+        <div class="footer-information-wrapper">
+          <div class="footer-contakt">
+            <div class="footer-title hugo-title-lg">КОНТАКТЫ</div>
+
+            <div class="footer-text text-md-500">Адрес:</div>
+            <div class="text-md-300"> г. Киев, проспект Победы, 10</div>
+
+            <div class="footer-text text-md-500">Телефон: </div>
+            <div class="text-md-300">+3809712345678</div>
+
+            <div class="footer-text text-md-500">Время работы:  </div>
+            <div class="text-md-300">с 9:00 до 1:00 ежедневно</div> 
+          </div>
+          <div class="footer-bg">
+            <img src="photo/footer.png">
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-logo">
+          <div class="footer-logo-title hugo-title-lg-other">CAUDER</div>
+          <div class="footer-logo-text text-md-300">Ресторан в Киеве</div>
+        </div>
+        <div class="footer-logo-text2">РЕСТОРАН ИТАЛЬЯНСКОЙ КУХНИ CHAUDER © 2018-2023</div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js" defer></script>  
 </body>

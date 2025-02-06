@@ -52,6 +52,16 @@ img{
     color: #FCFCFC;
     text-align: center;
 }
+.header-btn-w{
+    display: block;
+    margin-top: 35px;
+    background: #FCFCFC;
+    border: #292E36 1px solid;
+    width: 277px;
+    height: 71px;
+    color: #292E36;
+    text-align: center;
+}
 .menu-btn{
     width: 279.77px;
     height: 71px;
@@ -64,6 +74,24 @@ img{
 .gray-bg{
     background: #292E36;
 }
+
+/* label, input */
+input:not([type="checkbox"]){
+    display: block;
+    margin-bottom: 20px;
+    border: #292E36 1px solid;
+    width: 441px;
+    height: 71px;
+}
+label:not([type="checkbox"]){
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #292E36;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
 
 
 
