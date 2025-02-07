@@ -162,14 +162,14 @@ nav{
     margin: 0 0 50px 0;
 }
 /* .swiper-wrapper{
-	padding-left: 35px;
+	margin: 0 100px 0 40px;
 } */
-.swiper-slide{
+ .swiper-slide{
  padding: 0 40px 0 40px;
-}
+} 
 .swiper-slide img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
 }
 h3 {
 	margin: 15px 0 15px 0;
@@ -178,9 +178,11 @@ h3 {
 p {
     color: #a09b9b;
 }
-.swiper-button-next,
-.swiper-button-prev{
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
 	color: #FCFCFC;
+	font-size: 40px;
 }
 .full{
 	margin: 0 20px 0 50px;
@@ -320,92 +322,17 @@ p {
 	max-width: 100%;
 	max-height: 500px;
 }
-/* .carousel-2 .swiper-wrapper{
-	justify-content: space-between;
-} */
- /* .carousel-wrapper-2{
-	padding-bottom: 55px;
- } */
+.carousel-2 img {
+    width: 100%;
+    min-width: 500px;
+}
 .swiper-pagination-bullet{
-	height: 5px;
+	height: 2px;
 	width: 50px;
 	line-height: 0px;
 	border-radius: 0px;
-	background-color: #FCFCFC;
+	background-color: #a7a4a4;
 }
-/* Контейнер слайдера */
-/* .slider-container {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Лента слайдов */
-/* .slider {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-} */
-
-/* Трек слайдов */
-/* .slider-track {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-    gap: 10px;
-} */
-
-/* Каждый слайд */
-/* .slide {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.4s ease-in-out;
-} */
-
-/* Средний слайд увеличенный */
-/* .slider-track .slide:nth-child(2) {
-    transform: scale(1.1);
-} */
-
-/* Скролл (бегунок) */
-/* .scrollbar {
-    position: absolute;
-    bottom: 20px;
-    width: 250px;
-    height: 5px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 1;
-} */
-
-/* .scrollbar-thumb {
-    width: 50px;
-    height: 5px;
-    background: #ff6600;
-    border-radius: 5px;
-    transition: transform 0.4s;
-} */
-
-
-/* Настройка слайдов по центру */
-/* .slider {
-    position: relative;
-}
-
-.slider-container {
-    display: flex;
-    justify-content: center;
-}  */
-
-
-
 /* form */
 .form-wripper{
 	padding: 50px 150px 50px 150px;
@@ -486,6 +413,24 @@ footer{
 .footer-logo-text2{
 	margin-top: 100px;
 }
+@media (min-width: 1440px) and (max-width: 1864px){
+	.nav-bar{
+		padding-left: 40px;
+	}
+	nav{
+		gap: 20px;
+	}
+	.nav-links{
+		gap: 20px;
+	}
+	.information-bg img{
+		max-height: 90%;
+	}
+	.team-bg{
+		max-height: 90%;
+	}
+}
+
 @media (min-width: 1024px) and (max-width: 1440px){
 	/* header */
 	.burger-menu{
