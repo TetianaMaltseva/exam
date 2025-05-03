@@ -4,19 +4,25 @@ img{
 	display: block;
 	width: 100%;
 }
+:root {
+    --primary-dark: #292E36;
+    --primary-light: #FCFCFC;
+    --accent: #D4A373;
+}
 /* fonts */
 
+.hugo-title-lg, .hugo-title-lg-b {
+    font-size: 2.5rem;
+}
 .hugo-title-lg{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 44px;
     line-height: 56.72px;
     color: #FCFCFC;
 }
 .hugo-title-lg-b{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 44px;
     line-height: 56.72px;
     color: #292E36;
 }
@@ -41,12 +47,20 @@ img{
     font-weight: 21.13px;
 }
 
+@media (max-width: 768px) {
+    .hugo-title-lg, .hugo-title-lg-b {
+        font-size: 1.8rem;
+    }
+}
+
 /* button */
 
 .header-btn{
     margin-top: 35px;
-    background: #292E36;
-    border: #FCFCFC 1px solid;
+    background: var(--primary-dark);
+    border: 1px solid var(--primary-light);
+  /*  background: #292E36;
+    border: #FCFCFC 1px solid;*/
     width: 277px;
     height: 71px;
     color: #FCFCFC;
@@ -55,8 +69,8 @@ img{
 .header-btn-w{
     display: block;
     margin-top: 35px;
-    background: #FCFCFC;
-    border: #292E36 1px solid;
+    background: var(--primary-light);
+    border: 1px solid var(--primary-dark);
     width: 277px;
     height: 71px;
     color: #292E36;
@@ -66,20 +80,31 @@ img{
     width: 279.77px;
     height: 71px;
 }
+button:focus, a:focus {
+    outline: 2px solid #FCFCFC;
+    outline-offset: 2px;
+}
+.header-btn, .menu-btn, .header-btn-w {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.header-btn:hover, .menu-btn:hover, .header-btn-w:hover {
+    transform: scale(1.05);
+    background: var(--accent);
+}
 
 /* background */
 .white-bg{
-    background: #FCFCFC;
+    background: var(--primary-light);
 }
 .gray-bg{
-    background: #292E36;
+    background: var(--primary-dark);
 }
 
 /* label, input */
 input:not([type="checkbox"]){
     display: block;
     margin-bottom: 20px;
-    border: #292E36 1px solid;
+    border: 1px solid var(--primary-dark);
     width: 441px;
     height: 71px;
 }

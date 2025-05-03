@@ -17,12 +17,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 body{
 	font-family: "Raleway", "Light haus", "De Basto", sans-serif;
 	max-width: 1920px;
+	overflow-x: hidden;
 }
-
-/* header */
-/* body{
-	overflow: hidden;
-} */
 header{
 	width: 100%;
 }
@@ -41,6 +37,16 @@ nav{
 	width: 40%;
 	padding-left: 80px;
 }
+.wrapper,
+.form-wripper,
+.menu-wrapper,
+.events-wrapper,
+.team-wrapper,
+.footer-wrapper,
+.interior-wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* burger-.menu */
 .navbar{
@@ -50,14 +56,14 @@ nav{
 }
 .nav-links{
 	display: flex;
-	gap: 60px;
+	gap: 50px;
 }
 .nav-links a{
 	font-family: 'Times New Roman', Times, serif;
 	color: #FCFCFC;
-    font-weight: 200;
-    font-size: 20px;
-    font-weight: 23.48px;
+  font-weight: 200;
+  font-size: 20px;
+  font-weight: 23.48px;
 	transition: 0.3s;
 }
 .burger-menu{
@@ -77,7 +83,7 @@ nav{
 	line-height: 15.11px;
 	border: #FCFCFC 1px solid;
 	min-width: 110px;
-    min-height: 39px;
+  min-height: 39px;
 	padding: 5px 3px 5px 3px;
 	text-align: center;
 }
@@ -101,7 +107,6 @@ nav{
 .text-header-lm{
 	margin-top: 15px;
 }
-
 .bg-nav{
 	width: 60%;
 }
@@ -117,12 +122,6 @@ nav{
 	display: flex;
 	gap: 100px;
 }
-.information-bg{
-	width: 50%;
-}
-.information-text{
-	width: 50%;
-}
 .info-text-lg{
 	line-height: 63.54px;
 	color: #292E36;
@@ -137,6 +136,7 @@ nav{
 	color: #606774;
 	text-align: end;
 	margin-top: 20px;
+	padding-right: 30px;
 	font-family: "Love Light", serif;
 	font-size: 44px;
 	font-weight: 400;
@@ -158,14 +158,14 @@ nav{
 }
 /* carousel */
 .swiper {
-    width: 100%;
-    margin: 0 0 50px 0;
+	max-width: 100%;
+	overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
 }
-/* .swiper-wrapper{
-	margin: 0 100px 0 40px;
-} */
  .swiper-slide{
- padding: 0 40px 0 40px;
+ width: auto !important;
+ max-width: 300px;
 } 
 .swiper-slide img {
     width: 100%;
@@ -186,6 +186,26 @@ p {
 }
 .full{
 	margin: 0 20px 0 50px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+}
+.modal-content {
+	background: #FCFCFC;
+	padding: 20px;
+	margin: 10% auto;
+	max-width: 600px;
+}
+.modal.active {
+	display: block;
 }
 .wine{
 	color: #FCFCFC;
@@ -263,9 +283,9 @@ p {
 }
 .events-card{
 	min-width: 465px;
-    max-height: 530px;
-    background: #292E36;
-    color: #FCFCFC;
+  max-height: 530px;
+  background: #292E36;
+  color: #FCFCFC;
 }
 .events-text{
 	color: #292E36;
@@ -423,11 +443,15 @@ footer{
 	.nav-links{
 		gap: 20px;
 	}
+	
 	.information-bg img{
 		max-height: 90%;
 	}
 	.team-bg{
 		max-height: 90%;
+	}
+	.caption{
+		padding-right: 50px;
 	}
 }
 
@@ -440,8 +464,8 @@ footer{
 		display: none;
 		flex-direction: column;
 		position: absolute;
-		top: 30px;
-		right: 0;
+		top: 0;
+		left: 400px;
 		background: #292E36;
 		width: 200px;
 		padding: 15px;
@@ -476,6 +500,7 @@ footer{
 	.caption{
 		margin-top: 15px;
 		font-size: 35px;
+		margin-right: 50px;
 	}
 	/* menu */
 	.carousel-title{
@@ -536,8 +561,8 @@ footer{
 		display: none;
 		flex-direction: column;
 		position: absolute;
-		top: 30px;
-		right: 0;
+		top: 0;
+		left: 350px;
 		background: #292E36;
 		width: 200px;
 		padding: 15px;
@@ -587,6 +612,7 @@ footer{
 		.caption{
 			margin-top: 15px;
 			font-size: 35px;
+			margin-right: 50px;
 		}
 		/*menu  */
 		.carousel-title{
@@ -670,7 +696,7 @@ footer{
 }
 
 @media (min-width: 410px) and (max-width: 768px){
-	/* header */
+	/* header     */
 	.first-logo{
 		display: none;
 	}
@@ -681,8 +707,8 @@ footer{
 		display: none;
 		flex-direction: column;
 		position: absolute;
-		top: 10px;
-		right: 0;
+		top: 0;
+		left: 250px;
 		background: #292E36;
 		width: 150px;
 		padding: 10px;
@@ -697,9 +723,10 @@ footer{
 	.nav-bar{
 		width: 50%;
 		padding-left: 30px;
+	
 	}
 	.bg-nav{
-		width: 50%;
+		display: none;
 	}
 	.nav-links{
 		gap: 30px;
@@ -708,8 +735,8 @@ footer{
 		display: none;
 	}
 	.text-bg{
-		padding-top: 50px;
-		padding-left: 0px;
+		padding: 50px 0 50px 0;
+		
 	}
 	.header-btn{
 		width: 150px;
@@ -718,29 +745,31 @@ footer{
 	}
 	/* information */
 	.information{
-		padding: 50px 10px 50px 10px;
+		padding: 40px 0 40px 0;
 	}
 	.wrapper{
-		flex-wrap: wrap;
+		display: flex;
 		gap: 10px;
 		justify-content: center;
 	}
 	.info-text-lg{
 		line-height: 50px;
 		font-size: 30px;
+		text-align: center;
 	}
 	.info-text-sm{
 		font-size: 18px;
 		line-height: 19px;
 		padding-top: 20px;
-		
+		text-align: center;
 	}
 	.caption{
 		margin-top: 15px;
 		font-size: 35px;
+		margin-bottom: 35px;
 	}
 	.information-bg{
-		display: 100%;
+		display: none;
 	}
 	.information-text{
 		width: 100%;
@@ -780,6 +809,7 @@ footer{
 	.team-text{
 		width: 100%;
 		text-align: center;
+		font-size: 18px;
 	}
 	.team-title{
 		padding: 0 0 20px 0;
@@ -861,6 +891,14 @@ footer{
 }
 @media (min-width: 290px) and (max-width: 410px){
 	/* header */
+	.wrapper{
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+		margin: 0;
+		width: 100%;
+		box-sizing: border-box;
+	}
 	.head{
 		padding-bottom: 50px;
 	}
@@ -874,7 +912,7 @@ footer{
 		display: none;
 		flex-direction: column;
 		position: absolute;
-		top: 10px;
+		top: 0;
 		right: 0;
 		background: #292E36;
 		width: 150px;
@@ -885,7 +923,9 @@ footer{
 	}
 	.nav-bar{
 		width: 100%;
-		padding-left: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
 	}
 	.bg-nav{
 		display: none;
@@ -901,7 +941,7 @@ footer{
 		padding-left: 0px;
 	}
 	.header-btn{
-		width: 150px;
+		width: 120px;
 		height: 40px;
 		font-size: 15px;
 	}
@@ -926,7 +966,6 @@ footer{
 		font-size: 18px;
 		line-height: 19px;
 		padding-top: 20px;
-		
 	}
 	.caption{
 		margin-top: 15px;
@@ -1034,13 +1073,14 @@ footer{
 		flex-direction: column;
 	}
 	.form-user{
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.form-img{
 		display: none;
 	}
 	#name, #tel{
-		width: 250px;
+		width: 100%;
+		max-width: 250px;
 	}
 	.header-btn-w{
 		width: 250px;
@@ -1063,9 +1103,36 @@ footer{
 	.footer-title{
 		margin-top: 0px;
 		font-size: 25px;
-	}
-	
-	
+	}	
+}
+
+/* preloader*/
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #292E36;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#preloader div {
+	border: 4px solid #FCFCFC;
+	border-top: 4px solid transparent;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite;
 }
 
 

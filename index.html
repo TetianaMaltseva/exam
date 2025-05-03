@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam</title>
+    <meta name="description" content="Chauder - Italian restaurant in Kyiv offering authentic cuisine and cozy ambiance.">
+    <meta name="keywords" content="Italian restaurant, Kyiv, Chauder, fine dining">
+    <title>Chauder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -13,12 +15,15 @@
     
 </head>
 <body>
+  <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #292E36; z-index: 9999; display: flex; align-items: center; justify-content: center;">
+    <div style="border: 4px solid #FCFCFC; border-top: 4px solid transparent; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+</div>
     <header class="gray-bg">
 			<div class="head">
         <div class="nav-bar">
 					<div class="menu-nav">
             <nav>
-              <div class="first-logo text-md-300"><a >Ресторан в Киеве<br><span class="logo hugo-title-lg-other">CAUDER</span></a></div>
+              <div class="first-logo text-md-300"><a >Restaurant in Kiev<br><span class="logo hugo-title-lg-other">CAUDER</span></a></div>
               <div class="navbar">
                 <div class="burger-menu" id="burger-menu">
                   <span></span>
@@ -26,21 +31,21 @@
                   <span></span>
                 </div>
 							  <ul class="nav-links" id="nav-links">
-								  <li><a href="#information">Концепция</a></li>
-								  <li><a href="#menu">Меню</a></li>
-								  <li><a href="#">Интерьер</a></li>
-								  <li><a href="#">Контакты</a></li>
+								  <li><a href="#concept">Кonzept</a></li>
+								  <li><a href="#menu">Menü</a></li>
+								  <li><a href="#interior">Interieur</a></li>
+								  <li><a href="#contact">Kontakt</a></li>
 							  </ul>
               </div>
             </nav>
 					</div>
           <div class="text-bg">
               <div class="text-header">
-                <p class="text-header-md hugo-title-lg-other">Ресторан итальянской кухни</p>
+                <p class="text-header-md hugo-title-lg-other">Italienisches Restaurant</p>
                 <p class="text-header-lg hugo-title-lg-other">CHAUDER</p>
-                <p class="text-header-lm text-md-300">Горячий прием и уютная атмосфера в самом центре Киева</p>
+                <p class="text-header-lm text-md-300">Herzlicher Empfang und gemütliche Atmosphäre im Zentrum von Kiev</p>
               </div>
-              <button class="header-btn text-md-500">Забронировать столик</button>
+              <button class="header-btn text-md-500">Tisch reservieren</button>
           </div>
           
         </div>
@@ -49,19 +54,26 @@
         </div>
 			</div>
     </header>
-   <section class="information white-bg" id="information">
+   <section class="information white-bg" id="caption">
     <div class="wrapper">
       <div class="information-bg">
         <img src="photo/information.png">
       </div>
       <div class="information-text">
-        <p class="info-text-lg hugo-title-lg">СОВРЕМЕННЫЙ ИНТЕРЬЕР И АВТОРСКАЯ КУХНЯ</p>
-        <p class="info-text-sm text-md-400">Ресторан “Chauder” - место, где можно отдохнуть, провести<br> время и насладиться блюдами  авторской кухни.
-           Наши блюда<br> приготовлены по оригинальным рецептам, переданным из <br>поколения в поколение,
-            чтобы передать вам настоящий вкус<br> Италии.
+        <p class="info-text-lg hugo-title-lg">MODERNES INTERIEUR UND AUTORENKÜCHE</p>
+        <p class="info-text-sm text-md-400">
+          Restaurant „Chauder“ – ein Ort, an dem Sie entspannen,<br> 
+          Zeit genießen und die Gerichte unserer Autorenküche<br> 
+          erleben  können. Unsere Gerichte werden nach originalen<br>
+          Rezepten  zubereitet, die von Generation zu Generation<br> 
+          weitergegeben wurden, um Ihnen den authentischen <br>
+          Geschmack  zu vermitteln.
         </p>
-        <p class="info-text-sm text-md-400">Наша атмосфера наполнена итальянским шармом и<br> гостеприимством. Уютный интерьер, 
-          мягкое освещение и<br> дружелюбный персонал сделают ваш визит приятным и<br> расслабляющим.
+        <p class="info-text-sm text-md-400">
+          Unsere Atmosphäre ist erfüllt von italienischem <br>
+          Charme und Gastfreundschaft. Das gemütliche Interieur,<br>
+          weiches Licht und unser freundliches Personal machen<br>
+          Ihren Besuch angenehm und erholsam.<br>
         </p>
         <p class="caption">CHAUDER</p>
       </div>
@@ -71,9 +83,12 @@
       <div class="menu-wrapper">
         <div class="menu-carousel">
           <div class="text-carousel">
-            <p class="carousel-title hugo-title-lg-other">MEНЮ</p>
-            <p class="carousel-text text-md-300">Самые популярные блюда нашего ресторана, изысканный вкус<br>
-               и уникальная подача,разработанные нашим шеф-поваром, не<br> оставляет никого равнодушным.
+            <p class="carousel-title hugo-title-lg-other">Menü</p>
+            <p class="carousel-text text-md-300">
+              Die beliebtesten Gerichte unseres Restaurants,<br>
+              ihr exquisiter Geschmack und die einzigartige
+              Präsentation, entwickelt von unserem Küchenchef,<br> 
+              lassen niemanden gleichgültig.
             </p>
           </div>
           <div class="carousel">
@@ -81,35 +96,35 @@
               <div class="swiper-wrapper">
                   <!-- Слайд 1 -->
                   <div class="swiper-slide">
-                      <img src="photo/menu1.png" alt="Блюдо 1">
-                        <h3 class="text-md-500">Рыбный стейк</h3>
+                    <img src="photo/menu1.png" alt="Fischsteak">
+                        <h3 class="text-md-500">Fischsteak</h3>
                         <p class="text-md-500">250₴</p>
                   </div>
                   <div class="swiper-slide">
-                      <img src="photo/menu2.png" alt="Блюдо 2">
-                       <h3 class="text-md-500">Паста Карбонара</h3>
+                      <img src="photo/menu2.png" alt="Tiramisu">
+                       <h3 class="text-md-500">Tiramisu</h3>
                        <p class="text-md-500">300₴</p>
                   </div>
                   <div class="swiper-slide">
-                      <img src="photo/menu3.png" alt="Блюдо 3">
-                        <h3 class="text-md-500">Тирамису</h3>
+                      <img src="photo/menu3.png" alt="Carbonara">
+                        <h3 class="text-md-500">Carbonara</h3>
                         <p class="text-md-500">300₴</p>
                   </div>
           
                   <!-- Слайд 2 -->
                   <div class="swiper-slide">
-                    <img src="photo/menu1.png" alt="Блюдо 1">
-                      <h3 class="text-md-500">Рыбный стейк</h3>
+                    <img src="photo/menu1.png" alt="Fischsteak">
+                      <h3 class="text-md-500">Fischsteak</h3>
                       <p class="text-md-500">250₴</p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="photo/menu2.png" alt="Блюдо 2">
-                     <h3 class="text-md-500">Паста Карбонара</h3>
+                    <img src="photo/menu2.png" alt="Tiramisu">
+                     <h3 class="text-md-500">Tiramisu</h3>
                      <p class="text-md-500">300₴</p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="photo/menu3.png" alt="Блюдо 3">
-                      <h3 class="text-md-500">Тирамису</h3>
+                    <img src="photo/menu3.png" alt="Carbonara">
+                      <h3 class="text-md-500">Carbonara</h3>
                       <p class="text-md-500">300₴</p>
                   </div>
               </div>
@@ -118,13 +133,24 @@
               <div class="swiper-button-prev"></div>
             </div>
           </div>
-          <button class="full menu-btn text-md-500">Смотреть полное меню</button>
-          <button class="wine menu-btn text-md-500">Винная карта</button>
+          <button class="full menu-btn text-md-500">Gesamte Speisekarte</button>
+          <div class="modal" id="menu-modal">
+            <div class="modal-content">
+                <h2>Full Menu</h2>
+                <ul>
+                    <li>Fish Steak - 250₴</li>
+                    <li>Pasta Carbonara - 300₴</li>
+                    <li>Tiramisu - 300₴</li>
+                </ul>
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+          <button class="wine menu-btn text-md-500">Weinkarte</button>
         </div>
         <div class="menu-bg">
           <img src="photo/menu-bg.png" alt="menu">
           <div class="pizza">
-            <div class="pizza-name text-md-500">Пицца Капричоза с ветчиной и шампиньонами</div>
+            <div class="pizza-name text-md-500">Pizza Capricciosa mit Schinken und Champignons</div>
             <div class="pizza-price text-md-500">350₴</div>
           </div>
         </div>
@@ -138,10 +164,14 @@
       </div>
       <div class="team-text">
         <p class="team-title hugo-title-lg">
-          КОМАНДА ПРОФЕССИОНАЛОВ
+          TEAM VON PROFIS
         </p>
-        <p class="team-sm text-md-300">С опытом работы более 15 лет, под руководством бренд-шефа из Италии Антонио Фитучини.</p>
-        <p class="team-sm text-md-300">“Повар должен сделать так, чтоб гости понимали то, что он сказать своим блюдом.”</p>
+        <p class="team-sm text-md-300">
+          Mit über 15 Jahren Erfahrung, unter der Leitung des italienischen Chefkochs Antonio Fitucchini.
+        </p>
+        <p class="team-sm text-md-300">
+          “Ein Koch muss es so machen, dass die Gäste verstehen, was er mit seinem Gericht sagen will.”
+        </p>
         <div class="team-img">
           <img src="photo/team.png">
         </div>
@@ -151,13 +181,16 @@
    <section class="events white-bg">
     <div class="events-wrapper">
       <div class="events-order">
-        <p class="events-title hugo-title-lg-b">БЛИЖАЙШИЕ<br> МЕРОПРИЯТИЯ</p>
-        <p class="events-text text-md-300">Разнообразьте ваш отдых интересными<br> событиями, вечеринками и дегустациями.</p>
-        <button class="events-btn header-btn text-md-500">Забронировать столик</button>
+        <p class="events-title hugo-title-lg-b">NÄCHSTE<br>VERANSTALTUNGEN</p>
+        <p class="events-text text-md-300">
+          Machen Sie Ihren Aufenthalt mit spannenden Events,<br> 
+           Partys und Verkostungen abwechslungsreicher.
+        </p>
+        <button class="events-btn header-btn text-md-500">Tisch reservieren</button>
       </div>
       <div class="events-card">
         <img src="photo/card.png">
-        <p class="events-number text-md-500">Дегустация вина и сыра</p>
+        <p class="events-number text-md-500">Wein- und Käseverkostung</p>
         <div class="events-time">
           <p class="text-md-300">24.03.2023</p>
           <p class="text-md-300">19:00</p>
@@ -165,17 +198,22 @@
       </div>
       <div class="events-card">
         <img src="photo/card1.png">
-        <p class="events-number text-md-500">Мастер-класс приготовления  стейка</p>
+        <p class="events-number text-md-500">Masterclass: Zubereitung von Steaks</p>
         <div class="events-time">
           <p class="text-md-300">28.03.2023</p>
           <p class="text-md-300">21:00</p>
         </div>
-        <p class="masterclass text-md-300">Вас ждет мастер-класс от приглашенного<br> шеф-повара из Франции, где он поделится<br> фирменным рецептом приготовления мяса</p>
+        <p class="masterclass text-md-300">
+          Erleben Sie eine Masterclass mit einem<br> 
+          eingeladenen Chefkoch aus Frankreich,<br>
+          der sein exklusives Rezept für die Zubereitung <br>
+          von Fleisch mit Ihnen teilt.
+        </p>
       </div>
     </div>
 
    </section>
-   <section class="interior gray-bg">
+   <section class="interior gray-bg" id="interior">
     <div class="interior-wrapper">
       <div class="interior-description">
         <p class="interior-title hugo-title-lg">ИНТЕРЬЕР РЕСТОРАНА</p>
@@ -200,27 +238,29 @@
       
     </div>
    </section>
-   <section class="form white-bg">
+   <section class="form white-bg" id="contact">
     <div class="form-wripper">
       <div class="form-information">
-        <p class="form-title hugo-title-lg-b">ЗАБРОНИРУЙТЕ СТОЛИК</p>
+        <p class="form-title hugo-title-lg-b">TISCH RESERVIEREN</p>
         <div class="form-form">
           <div class="form-img"><img src="photo/form-img.png"></div>
           <div class="form-user">
-            <p class="form-text text-md-400">Заполните форму и мы свяжемся  с вами сразу<br> для подтверждения брони</p>
+            <p class="form-text text-md-400">
+              Заполните форму и мы свяжемся  с вами сразу<br> для подтверждения брони
+            </p>
             <form>
-              <label for="name" class="text-md-400">Ваш номер</label>
-              <input type="text" id="name" class="text-md-400" placeholder="Анастасия ">
-              <label for="tel" class="text-md-400">Ваш номер</label>
-              <input type="text" class="text-md-400" id="tel" placeholder="+380(00) 000-00-00">
-              <input type="checkbox" id="text1"><label for="text1">Согласен(-а) на обработку персональных данных</label>
-              <button class="header-btn-w text-md-500">Забронируйте столик</button>
-            </form>
+              <label for="name" class="text-md-400">Ваше имя</label>
+              <input type="text" id="name" class="text-md-400" placeholder="Анастасия">
+              <label for="tel" class="text-md-400">Ваш номер телефона</label>
+              <input type="tel" id="tel" class="text-md-400" placeholder="+380(00) 000-00-00">
+              <input type="checkbox" id="consent"><label for="consent">Согласен(-а) на обработку персональных данных</label>
+              <button class="header-btn-w text-md-500">Забронировать столик</button>
+          </form>
           </div>
         </div>
       </div>
       <div class="form-bg">
-        <img src="photo/form-bg.png" alt="photo">
+        <img src="photo/form-bg.png" alt="Restaurant ambiance">
       </div>
     </div>
    </section>
@@ -246,7 +286,7 @@
         <div class="line"></div>
         <div class="footer-logo">
           <div class="footer-logo-title hugo-title-lg-other">CAUDER</div>
-          <div class="footer-logo-text text-md-300">Ресторан в Киеве</div>
+          <div class="footer-logo-text text-md-300">Restaurant in Kiev</div>
         </div>
         <div class="footer-logo-text2">РЕСТОРАН ИТАЛЬЯНСКОЙ КУХНИ CHAUDER © 2018-2023</div>
       </div>

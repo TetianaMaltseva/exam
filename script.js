@@ -11,18 +11,23 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3, // Показываем 3 фото
-        spaceBetween: 10, // Отступы между фото
+        spaceBetween: 30, // Отступы между фото
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          290: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+      }
         // loop: true, // Бесконечная прокрутка
         // loopedSlides: 3,
     });
 
             // carousel 2
     let swiper2 = new Swiper(".carousel-2", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 10,
         direction: 'horizontal',
         loop: true,
@@ -61,6 +66,32 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     
+});
+// modal
+document.querySelector('.full').addEventListener('click', () => {
+  document.getElementById('menu-modal').classList.add('active');
+});
+function closeModal() {
+  document.getElementById('menu-modal').classList.remove('active');
+}
+
+// Form
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const tel = document.getElementById('tel').value;
+  const consent = document.getElementById('consent').checked;
+  if (!name || !tel || !consent) {
+      alert('Please fill all fields and agree to data processing.');
+      return;
+  }
+  alert('Booking submitted!');
+});
+
+//preloader
+window.addEventListener('load', () => {
+  document.getElementById('preloader').style.display = 'none';
 });
 
 
