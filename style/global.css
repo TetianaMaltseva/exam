@@ -1,122 +1,134 @@
-
-
-img{
-	display: block;
-	width: 100%;
+img {
+  display: block;
+  width: 100%;
 }
 :root {
-    --primary-dark: #292E36;
-    --primary-light: #FCFCFC;
-    --accent: #D4A373;
+  --primary-dark: #292e36;
+  --primary-light: #fcfcfc;
+  --accent: #d4a373;
 }
 /* fonts */
 
-.hugo-title-lg, .hugo-title-lg-b {
-    font-size: 2.5rem;
+.hugo-title-lg,
+.hugo-title-lg-b {
+  font-size: 2.5rem;
 }
-.hugo-title-lg{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    line-height: 56.72px;
-    color: #FCFCFC;
+.hugo-title-lg {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 56.72px;
+  color: #fcfcfc;
 }
-.hugo-title-lg-b{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    line-height: 56.72px;
-    color: #292E36;
+.hugo-title-lg-b {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 56.72px;
+  color: #292e36;
 }
-.hugo-title-lg-other{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    color: #FCFCFC;
+.hugo-title-lg-other {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  color: #fcfcfc;
 }
-.text-md-300{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    color: #FCFCFC;
+.text-md-300 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  color: #fcfcfc;
 }
-.text-md-400{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
+.text-md-400 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
 }
-.text-md-500{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 18px;
-    font-weight: 21.13px;
+.text-md-500 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 21.13px;
 }
 
 @media (max-width: 768px) {
-    .hugo-title-lg, .hugo-title-lg-b {
-        font-size: 1.8rem;
-    }
+  .hugo-title-lg,
+  .hugo-title-lg-b {
+    font-size: 1.8rem;
+  }
 }
 
 /* button */
 
-.header-btn{
-    margin-top: 35px;
-    background: var(--primary-dark);
-    border: 1px solid var(--primary-light);
+.header-btn {
+  margin-top: 35px;
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-light);
   /*  background: #292E36;
     border: #FCFCFC 1px solid;*/
-    width: 277px;
-    height: 71px;
-    color: #FCFCFC;
-    text-align: center;
+  width: 277px;
+  height: 71px;
+  color: #fcfcfc;
+  text-align: center;
 }
-.header-btn-w{
-    display: block;
-    margin-top: 35px;
-    background: var(--primary-light);
-    border: 1px solid var(--primary-dark);
-    width: 277px;
-    height: 71px;
-    color: #292E36;
-    text-align: center;
+.header-btn-w {
+  display: block;
+  margin-top: 35px;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-dark);
+  width: 277px;
+  height: 71px;
+  color: #292e36;
+  text-align: center;
 }
-.menu-btn{
-    width: 279.77px;
-    height: 71px;
+.menu-btn {
+  width: 279.77px;
+  height: 71px;
 }
-button:focus, a:focus {
-    outline: 2px solid #FCFCFC;
-    outline-offset: 2px;
+.modalBtn {
+  display: block;
+  margin: 0 auto;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-dark);
+  width: 100px;
+  height: 40px;
+  color: #292e36;
+  text-align: center;
 }
-.header-btn, .menu-btn, .header-btn-w {
-    transition: transform 0.3s ease, background 0.3s ease;
+button:focus,
+a:focus {
+  outline: 2px solid #fcfcfc;
+  outline-offset: 2px;
 }
-.header-btn:hover, .menu-btn:hover, .header-btn-w:hover {
-    transform: scale(1.05);
-    background: var(--accent);
+.header-btn,
+.menu-btn,
+.header-btn-w,
+.modalBtn {
+  transition: transform 0.3s ease;
+}
+.header-btn:hover,
+.menu-btn:hover,
+.modalBtn:hover,
+.header-btn-w:hover {
+  transform: scale(1.05);
+  background: var(--accent);
 }
 
 /* background */
-.white-bg{
-    background: var(--primary-light);
+.white-bg {
+  background: var(--primary-light);
 }
-.gray-bg{
-    background: var(--primary-dark);
+.gray-bg {
+  background: var(--primary-dark);
 }
 
 /* label, input */
-input:not([type="checkbox"]){
-    display: block;
-    margin-bottom: 20px;
-    border: 1px solid var(--primary-dark);
-    width: 441px;
-    height: 71px;
+input:not([type="checkbox"]) {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-dark);
+  width: 441px;
+  height: 71px;
 }
-label:not([type="checkbox"]){
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #292E36;
-    font-size: 18px;
-    padding-left: 10px;
+label:not([type="checkbox"]) {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #292e36;
+  font-size: 18px;
+  padding-left: 10px;
 }
-
-
-
-
-
