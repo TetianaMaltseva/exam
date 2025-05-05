@@ -99,7 +99,7 @@ a:focus {
 .menu-btn,
 .header-btn-w,
 .modalBtn {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease background 0.3s ease;
 }
 .header-btn:hover,
 .menu-btn:hover,
